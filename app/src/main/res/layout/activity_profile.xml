@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+
+        android:layout_marginBottom="20dp"
+        android:background="#3F51B5"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_circular"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_baseline_account_circle_24" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        app:cardBackgroundColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/profile_Name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#D7F1F0F0"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_Email_TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBottom">
+
+        <TextView
+            android:id="@+id/profile_Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Email :"
+            android:textColor="#96050505"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/profile_Email_TextView"
+        android:layout_width="273dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="u6842090@anu.edu.au"
+        android:textColor="#D7F1F0F0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_GenderTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutBottom" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_GenderCard"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="19dp"
+        app:cardBackgroundColor="#D7F1F0F0"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_CollegeCard"
+        app:layout_constraintEnd_toStartOf="@+id/profile_GenderTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <TextView
+            android:id="@+id/profile_Geneder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Gender :"
+            android:textColor="#96050505"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/profile_GenderTextView"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:text="Male"
+        android:textColor="#D7F1F0F0"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_AgeCard"
+        app:layout_constraintStart_toEndOf="@+id/profile_GenderCard"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Email_TextView" />
+
+    <TextView
+        android:id="@+id/profile_CollegeTextView"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:gravity="center"
+        android:text="CSIT"
+        android:textColor="#D7F1F0F0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_Major_TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_CollegeCard"
+        app:layout_constraintTop_toBottomOf="@+id/profile_GenderTextView" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_CollegeCard"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        app:cardBackgroundColor="#D7F1F0F0"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_CollegeTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_GenderCard">
+
+        <TextView
+            android:id="@+id/profile_College"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="College :"
+            android:textColor="#96050505"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_MajorCard"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        app:cardBackgroundColor="#D7F1F0F0"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_Major_TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_CollegeCard">
+
+        <TextView
+            android:id="@+id/profile_Major"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Major :"
+            android:textColor="#96050505"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/profile_Major_TextView"
+        android:layout_width="273dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="Information System"
+        android:textColor="#D7F1F0F0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_DescriptionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_MajorCard"
+        app:layout_constraintTop_toBottomOf="@+id/profile_CollegeTextView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_AgeCard"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="75dp"
+        app:cardBackgroundColor="#D7F1F0F0"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_Major_TextView"
+        app:layout_constraintEnd_toStartOf="@+id/profile_profile_AgeTextView"
+        app:layout_constraintStart_toEndOf="@+id/profile_GenderTextView"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Email_TextView">
+
+
+        <TextView
+            android:id="@+id/profile_Age"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Age:"
+            android:textColor="#96050505"
+            android:textSize="16sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/profile_profile_AgeTextView"
+        android:layout_width="62dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="75dp"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="#D7F1F0F0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_Major_TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_AgeCard"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Email_TextView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_ProfileDescriptionCard"
+        android:layout_width="100dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:cardBackgroundColor="#D7F1F0F0"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_DescriptionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_MajorCard"
+        app:layout_constraintVertical_bias="0.125">
+
+
+        <TextView
+            android:id="@+id/ProfileDiscription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Description:"
+            android:textColor="#96050505"
+            android:textSize="16sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/profile_DescriptionTextView"
+        android:layout_width="266dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textview_border"
+        android:text="This is where how user describe themself"
+        android:textColor="#D7F1F0F0"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_ProfileDescriptionCard"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Major_TextView" />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="132dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="36dp"
+        android:text="Sign Out"
+        android:textColor="@color/white"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonhomePage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_ProfileDescriptionCard" />
+
+    <Button
+        android:id="@+id/editProfile_button"
+        android:layout_width="135dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="36dp"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonhomePage"
+        app:layout_constraintTop_toBottomOf="@+id/profile_DescriptionTextView" />
+
+    <Button
+        android:id="@+id/buttonhomePage"
+        android:layout_width="132dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="36dp"
+        android:text="Home Page"
+        android:textColor="@color/white"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editProfile_button"
+        app:layout_constraintStart_toEndOf="@+id/sign_out_button"
+        app:layout_constraintTop_toBottomOf="@+id/profile_DescriptionTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

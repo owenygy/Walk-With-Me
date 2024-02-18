@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/Register_textView_Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Welcome to join Walk With Me"
+        android:textColor="#96ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <LinearLayout
+        android:id="@+id/Register_linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_textView_Welcome"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/Register_input_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#96ffffff"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints"
+            android:drawableEnd="@drawable/ic_baseline_account_box_24"
+            android:drawableRight="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="16dp"
+            android:hint="User Name"
+            android:maxLines="1"
+            android:inputType="text"
+             />
+
+        <EditText
+            android:id="@+id/Register_input_Email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#96ffffff"
+            android:drawableEnd="@drawable/ic_email_white_24dp"
+            android:drawableRight="@drawable/ic_email_white_24dp"
+            android:drawablePadding="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="316dp" />
+
+        <EditText
+            android:id="@+id/Register_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#96ffffff"
+            android:drawableEnd="@drawable/ic_lock_white_24dp"
+            android:drawableRight="@drawable/ic_lock_white_24dp"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp"
+
+            />
+
+        <EditText
+            android:id="@+id/Register_input_age"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#96ffffff"
+            android:drawablePadding="16dp"
+            android:hint="Age"
+            android:inputType="phone"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Register_linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_linearLayout1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="DuplicateIds,MissingConstraints">
+
+        <EditText
+            android:id="@+id/Register_input_major"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#96ffffff"
+            android:drawablePadding="16dp"
+            android:hint="Major"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:inputType="text"
+             />
+
+        <EditText
+            android:id="@+id/Register_input_description"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="  Feel free to tell others about yourself"
+            android:inputType="textMultiLine"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/textview_border"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_linearLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/Register_spinner_Gender"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:textColorHint="#96040404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_linearLayout1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/register_spinner_College"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:textColorHint="#96040404"
+        app:layout_constraintBottom_toTopOf="@+id/Register_linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_spinner_Gender"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/register_Gender"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:text="Gender"
+        android:gravity="left|center"
+        android:textColor="#96ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/register_College"
+        app:layout_constraintEnd_toStartOf="@+id/Register_spinner_Gender"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_linearLayout1" />
+
+    <TextView
+        android:id="@+id/register_College"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="left|center"
+        android:textColor="#96ffffff"
+        android:textSize="16sp"
+        android:text="College"
+        app:layout_constraintBottom_toTopOf="@+id/Register_linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/register_spinner_College"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_Gender" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

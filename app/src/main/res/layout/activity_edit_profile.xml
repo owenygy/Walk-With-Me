@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:id="@+id/Register_linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Title_textView">
+
+        <EditText
+            android:id="@+id/Update_input_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#96ffffff"
+            android:drawableEnd="@drawable/ic_baseline_account_box_24"
+            android:drawableRight="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="16dp"
+            android:hint="Update User Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+            <EditText
+                android:id="@+id/Update_input_password1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#96ffffff"
+                android:drawableEnd="@drawable/ic_lock_white_24dp"
+                android:drawableRight="@drawable/ic_lock_white_24dp"
+                android:drawablePadding="16dp"
+                android:hint="Update Password"
+                android:inputType="textPassword"
+                android:textColor="#96ffffff"
+                android:textColorHint="#96ffffff"
+                android:textSize="16sp"
+
+                />
+
+
+
+
+
+        <EditText
+            android:id="@+id/Update_input_major"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#96ffffff"
+            android:drawablePadding="16dp"
+            android:hint="Update Major"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/Update_input_description"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:background="@drawable/textview_border"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="  Please update your own description here (within200 words)"
+            android:inputType="textMultiLine"
+            android:textColor="#96ffffff"
+            android:textColorHint="#96ffffff"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Edit_Title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Edit your information here!"
+        android:textColor="#96ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <Button
+        android:id="@+id/button_edit_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Finish Upate"
+        android:textColor="@color/white"
+        app:backgroundTint="#3F51B5"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TipstextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="90dp"
+        android:text="(leave the input blank if you don't want to edit that feild)"
+        android:textColor="#96ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/Register_linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Title_textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

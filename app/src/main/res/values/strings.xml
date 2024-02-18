@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WalkWith Me</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Register_Gender">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Intersex</item>
+        <item>Trans</item>
+        <item>Non-Conforming</item>
+        <item>Personal</item>
+        <item>Eunuch</item>
+
+    </string-array>
+
+    <string-array name="Register_College">
+        <item></item>
+        <item>CASS</item>
+        <item>CAP</item>
+        <item>CBE</item>
+        <item>CECS</item>
+        <item>CHM</item>
+        <item>COL</item>
+        <item>COS</item>
+        <item>ANU College</item>
+
+    </string-array>
+</resources>
